@@ -6,13 +6,29 @@
 
   <link href="https://fonts.googleapis.com/css?family=Montserrat|Muli" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
 
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.min.js"></script>
 
   <script id="resume-template" type="text/x-handlebars-template">
 
     <div class="resume-body">
+
+      <div class="nameplate">
+        <span class="first-name">{{nameplate.firstName}}</span>
+        <span class="last-name">{{nameplate.lastName}}</span>
+
+        {{#each nameplate.icons}}
+        <a href={{this.link}}>
+          <img src={{this.img}}/>
+          {{this.display}}
+        </a>
+        {{/each}}
+      </div>
+
       {{#each sections}}
         <div class="resume-section">
           <div class="section-header">
