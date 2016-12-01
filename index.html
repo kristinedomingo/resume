@@ -1,0 +1,44 @@
+<!DOCTYPE html><html>
+<head>
+  <meta charset="UTF-8">
+  <title>Kristine Domingo - Resume</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Muli" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.min.js"></script>
+
+  <script id="resume-template" type="text/x-handlebars-template">
+
+    <div class="resume-body">
+      {{#each sections}}
+        <div class="resume-section">
+          <div class="section-header">
+            {{this.header}}
+          </div>
+          {{#each this.items}}
+            <div class="section-item">
+              <span class="item-title">{{this.title}}</span>
+              <span class="item-secondary-title">{{this.secondaryTitle}}</span>
+              <ul>
+                {{#each this.bullets}}
+                  {{this}}
+                {{/each}}
+              </ul>
+            </div>
+          {{/each}}
+        </div>
+      {{/each}}
+
+    </div>
+
+  </script>
+</head>
+
+<body>
+  <script src="index.js"></script>
+</body>
+
+</html>
