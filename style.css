@@ -1,20 +1,36 @@
-
+/* Variables */
 .resume-body {
   font-family: 'Muli', sans-serif;
   box-shadow: 0px 0px 15px #ccc;
-
   /* Center resume and fix size (proportions) */
   margin: auto;
   width: 850px;
   height: 1100px;
-
   /* Prevent padding from changing size */
   padding: 20px;
-  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
-  box-sizing: border-box;         /* Opera/IE 8+ */
-}
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */ }
 
+/* Nameplate section (name and contact info) */
+.nameplate .first-name, .nameplate .last-name {
+  font-family: 'Montserrat', sans-serif; }
+
+/* Section styles */
 .resume-section {
+  /* Section header */ }
+  .resume-section .section-header {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #E6EBEB;
+    padding: 1px 15px;
+    /* top-bottom, left-right */
+    /* Text */
+    font-size: 1.5em;
+    font-weight: 900;
+    color: #339595;
+    text-transform: uppercase; }
 
-}
+/*# sourceMappingURL=style.css.map */
