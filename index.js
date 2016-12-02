@@ -18,7 +18,7 @@ var data = {
       },
       {
         display: "kristinedomingo.com",
-        link: "kristinedomingo.com",
+        link: "https://kristinedomingo.com",
         icon: "fa-globe"
       },
       {
