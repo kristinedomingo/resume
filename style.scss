@@ -29,17 +29,66 @@ $section-color: #E6EBEB;
 /* Section styles */
 .resume-section {
 
+  /* Ensure padding (text left-alignment) is consistent */
+  .section-header, .section-item {
+    padding: 1px 15px; /* top-bottom, left-right */
+  }
+
   /* Section header */
   .section-header {
     font-family: 'Montserrat', sans-serif;
     background-color: $section-color;
-    padding: 1px 15px; /* top-bottom, left-right */
+    margin: 5px 0px; /* top-bottom, left-right */
 
     /* Text */
     font-size: 1.5em;
     font-weight: 900;
     color: $primary-color;
     text-transform: uppercase;
-    // letter-spacing: 0.1em;
+  }
+
+  /* Section content */
+  .section-item {
+
+    /* Item title */
+    .item-title {
+      font-family: 'Montserrat', sans-serif;
+      text-transform: uppercase;
+      float: left;
+    }
+
+    /* Item location */
+    .item-location {
+      font-family: 'Montserrat', sans-serif;
+      float: right;
+    }
+
+    /* Item secondary title */
+    .item-secondary-title {
+      font-family: 'Montserrat', sans-serif;
+      color: $secondary-color;
+      clear: both;
+
+      /* Align text (left) on the same line as duration */
+      float: left;
+    }
+
+    /* Item duration */
+    .item-duration {
+      font-family: 'Montserrat', sans-serif;
+
+      /* Align text (right) on the same line as secondary title */
+      float: right;
+    }
+
+    /* Item bullets */
+    .item-bullets {
+      padding-left: 25px;
+      font-size: 0.8em;
+      font-weight: 600;
+
+      /* Prevent above floating text from messing up things */
+      clear: both;
+    }
   }
 }

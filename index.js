@@ -54,6 +54,7 @@ var data = {
       items: [
         {
           title: "Facebook",
+          location: "Seattle, WA",
           secondaryTitle: "Software Engineer",
           duration: "July 2017",
           bullets: [
@@ -62,16 +63,18 @@ var data = {
         },
         {
           title: "RetailMeNot",
+          location: "Austin, TX",
           secondaryTitle: "Software Engineering Intern",
           duration: "June 2016 to Aug 2016",
           bullets: [
             "Created the front-page of RetailMeNot Gift Cards (giftcards.retailmenot.com, pending publication)",
             "Performed full-stack work, using Redux with FlightJS (by Twitter), Node, and Spring for the Java API",
-            "Added an informational banner to the RetailMeNot homepage, promoting Gift Cards as a RetailMeNot product"
+            "Added a banner with featured company deals to the RetailMeNot homepage, promoting Gift Cards as a RetailMeNot product"
           ]
         },
         {
           title: "National Instruments",
+          location: "Austin, TX",
           secondaryTitle: "Co-op Software Engineer",
           duration: "Aug 2015 to Nov 2015",
           bullets: [
@@ -81,6 +84,7 @@ var data = {
         },
         {
           title: "National Instruments",
+          location: "Austin, TX",
           secondaryTitle: "Software Engineering Intern",
           duration: "Jun 2015 to Aug 2015",
           bullets: [
@@ -91,11 +95,12 @@ var data = {
         },
         {
           title: "ABB Enterprise Software",
+          location: "Austin, TX",
           secondaryTitle: "Software Engineering Intern",
           duration: "May 2014 to July 2014",
           bullets: [
             "Modified and expanded the company’s Cordova mobile application, correcting errors and increasing efficiency",
-            ""
+            "Used the Mocha test framework to write and fix several unit tests"
           ]
         }
       ]

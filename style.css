@@ -21,16 +21,50 @@
 
 /* Section styles */
 .resume-section {
-  /* Section header */ }
+  /* Ensure padding (text left-alignment) is consistent */
+  /* Section header */
+  /* Section content */ }
+  .resume-section .section-header, .resume-section .section-item {
+    padding: 1px 15px;
+    /* top-bottom, left-right */ }
   .resume-section .section-header {
     font-family: 'Montserrat', sans-serif;
     background-color: #E6EBEB;
-    padding: 1px 15px;
+    margin: 5px 0px;
     /* top-bottom, left-right */
     /* Text */
     font-size: 1.5em;
     font-weight: 900;
     color: #339595;
     text-transform: uppercase; }
+  .resume-section .section-item {
+    /* Item title */
+    /* Item location */
+    /* Item secondary title */
+    /* Item duration */
+    /* Item bullets */ }
+    .resume-section .section-item .item-title {
+      font-family: 'Montserrat', sans-serif;
+      text-transform: uppercase;
+      float: left; }
+    .resume-section .section-item .item-location {
+      font-family: 'Montserrat', sans-serif;
+      float: right; }
+    .resume-section .section-item .item-secondary-title {
+      font-family: 'Montserrat', sans-serif;
+      color: #888888;
+      clear: both;
+      /* Align text (left) on the same line as duration */
+      float: left; }
+    .resume-section .section-item .item-duration {
+      font-family: 'Montserrat', sans-serif;
+      /* Align text (right) on the same line as secondary title */
+      float: right; }
+    .resume-section .section-item .item-bullets {
+      padding-left: 25px;
+      font-size: 0.8em;
+      font-weight: 600;
+      /* Prevent above floating text from messing up things */
+      clear: both; }
 
 /*# sourceMappingURL=style.css.map */

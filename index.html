@@ -9,8 +9,8 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
   <link rel="stylesheet" type="text/css" href="style.css">
 
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.min.js"></script>
 
   <script id="resume-template" type="text/x-handlebars-template">
@@ -37,9 +37,10 @@
           {{#each this.items}}
             <div class="section-item">
               <span class="item-title">{{this.title}}</span>
+              <span class="item-location">{{this.location}}</span>
               <span class="item-secondary-title">{{this.secondaryTitle}}</span>
               <span class="item-duration">{{this.duration}}</span>
-              <ul>
+              <ul class="item-bullets">
                 {{#each this.bullets}}
                   <li>{{this}}</li>
                 {{/each}}
