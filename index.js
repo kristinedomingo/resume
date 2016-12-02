@@ -9,27 +9,27 @@ var data = {
       {
         display: "me@kristinedomingo.com",
         link: "mailto:me@kristinedomingo.com",
-        icon: ""
+        icon: "fa-envelope"
       },
       {
         display: "(713) 417-4961",
         link: "",
-        icon: ""
+        icon: "fa-mobile"
       },
       {
         display: "kristinedomingo.com",
         link: "kristinedomingo.com",
-        icon: ""
+        icon: "fa-globe"
       },
       {
         display: "kristinedomingo",
         link: "https://www.linkedin.com/in/kristinedomingo",
-        icon: ""
+        icon: "fa-linkedin"
       },
       {
         display: "kristinedomingo",
         link: "https://github.com/kristinedomingo",
-        icon: ""
+        icon: "fa-github"
       }
     ]
   },

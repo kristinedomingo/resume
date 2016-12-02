@@ -19,19 +19,33 @@ body {
   /* Opera/IE 8+ */ }
 
 /* Nameplate section (name and contact info) */
-.nameplate .name {
-  text-transform: uppercase;
-  font-family: "Montserrat", sans-serif;
-  font-size: 3em;
-  font-weight: 900; }
-.nameplate .first-name {
-  padding-left: 15px;
-  color: #339595; }
-.nameplate .last-name {
-  color: #888888; }
+.nameplate {
+  /* Ensure padding (text left-alignment) is consistent */ }
+  .nameplate .name, .nameplate .icons {
+    padding-left: 15px; }
+  .nameplate .name {
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.5em;
+    font-weight: 900; }
+  .nameplate .first-name {
+    color: #339595; }
+  .nameplate .last-name {
+    color: #888888; }
+  .nameplate .icons {
+    margin-bottom: 15px; }
+    .nameplate .icons a {
+      color: #000;
+      font-family: "Montserrat", sans-serif;
+      font-size: 0.9em;
+      margin-right: 15px; }
+      .nameplate .icons a:hover {
+        text-decoration: none;
+        color: #339595; }
 
 /* Section styles */
 .resume-section {
+  clear: both;
   /* Ensure padding (text left-alignment) is consistent */
   /* Section header */
   /* Section content */ }

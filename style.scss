@@ -2,9 +2,15 @@
 $primary-color: #339595;
 $secondary-color: #888888;
 $section-color: #E6EBEB;
+$body-color: #000;
 
 $primary-font: 'Montserrat', sans-serif;
 $secondary-font: 'Muli', sans-serif;
+
+$name-font-size: 2.5em;
+$icon-font-size: 0.9em;
+$section-header-font-size: 1.5em;
+$bullet-font-size: 0.8em;
 
 body {
   padding: 20px;
@@ -28,25 +34,47 @@ body {
 
 /* Nameplate section (name and contact info) */
 .nameplate {
+
+  /* Ensure padding (text left-alignment) is consistent */
+  .name, .icons {
+    padding-left: 15px;
+  }
+
   .name {
     text-transform: uppercase;
     font-family: $primary-font;
-    font-size: 3em;
+    font-size: $name-font-size;
     font-weight: 900;
   }
 
   .first-name {
-    padding-left: 15px;
     color: $primary-color;
   }
 
   .last-name {
     color: $secondary-color;
   }
+
+  .icons {
+    margin-bottom: 15px;
+
+    a {
+      color: $body-color;
+      font-family: $primary-font;
+      font-size: $icon-font-size;
+      margin-right: 15px;
+
+      &:hover {
+        text-decoration: none;
+        color: $primary-color;
+      }
+    }
+  }
 }
 
 /* Section styles */
 .resume-section {
+  clear: both;
 
   /* Ensure padding (text left-alignment) is consistent */
   .section-header, .section-item {
@@ -60,7 +88,7 @@ body {
     margin: 5px 0px; /* top-bottom, left-right */
 
     /* Text */
-    font-size: 1.5em;
+    font-size: $section-header-font-size;
     font-weight: 900;
     color: $primary-color;
     text-transform: uppercase;
@@ -103,7 +131,7 @@ body {
     /* Item bullets */
     .item-bullets {
       padding-left: 25px;
-      font-size: 0.8em;
+      font-size: $bullet-font-size;
       font-weight: 600;
 
       /* Prevent above floating text from messing up things */
