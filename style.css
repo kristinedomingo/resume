@@ -1,6 +1,6 @@
 /* Variables */
 .resume-body {
-  font-family: 'Muli', sans-serif;
+  font-family: "Muli", sans-serif;
   box-shadow: 0px 0px 15px #ccc;
   /* Center resume and fix size (proportions) */
   margin: auto;
@@ -17,7 +17,7 @@
 
 /* Nameplate section (name and contact info) */
 .nameplate .first-name, .nameplate .last-name {
-  font-family: 'Montserrat', sans-serif; }
+  font-family: "Montserrat", sans-serif; }
 
 /* Section styles */
 .resume-section {
@@ -28,7 +28,7 @@
     padding: 1px 15px;
     /* top-bottom, left-right */ }
   .resume-section .section-header {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     background-color: #E6EBEB;
     margin: 5px 0px;
     /* top-bottom, left-right */
@@ -44,20 +44,20 @@
     /* Item duration */
     /* Item bullets */ }
     .resume-section .section-item .item-title {
-      font-family: 'Montserrat', sans-serif;
+      font-family: "Montserrat", sans-serif;
       text-transform: uppercase;
       float: left; }
     .resume-section .section-item .item-location {
-      font-family: 'Montserrat', sans-serif;
+      font-family: "Montserrat", sans-serif;
       float: right; }
     .resume-section .section-item .item-secondary-title {
-      font-family: 'Montserrat', sans-serif;
+      font-family: "Montserrat", sans-serif;
       color: #888888;
       clear: both;
       /* Align text (left) on the same line as duration */
       float: left; }
     .resume-section .section-item .item-duration {
-      font-family: 'Montserrat', sans-serif;
+      font-family: "Montserrat", sans-serif;
       /* Align text (right) on the same line as secondary title */
       float: right; }
     .resume-section .section-item .item-bullets {

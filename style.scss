@@ -3,8 +3,11 @@ $primary-color: #339595;
 $secondary-color: #888888;
 $section-color: #E6EBEB;
 
+$primary-font: 'Montserrat', sans-serif;
+$secondary-font: 'Muli', sans-serif;
+
 .resume-body {
-  font-family: 'Muli', sans-serif;
+  font-family: $secondary-font;
   box-shadow: 0px 0px 15px #ccc;
 
   /* Center resume and fix size (proportions) */
@@ -22,7 +25,7 @@ $section-color: #E6EBEB;
 /* Nameplate section (name and contact info) */
 .nameplate {
   .first-name, .last-name {
-    font-family: 'Montserrat', sans-serif;
+    font-family: $primary-font;
   }
 }
 
@@ -36,7 +39,7 @@ $section-color: #E6EBEB;
 
   /* Section header */
   .section-header {
-    font-family: 'Montserrat', sans-serif;
+    font-family: $primary-font;
     background-color: $section-color;
     margin: 5px 0px; /* top-bottom, left-right */
 
@@ -52,20 +55,20 @@ $section-color: #E6EBEB;
 
     /* Item title */
     .item-title {
-      font-family: 'Montserrat', sans-serif;
+      font-family: $primary-font;
       text-transform: uppercase;
       float: left;
     }
 
     /* Item location */
     .item-location {
-      font-family: 'Montserrat', sans-serif;
+      font-family: $primary-font;
       float: right;
     }
 
     /* Item secondary title */
     .item-secondary-title {
-      font-family: 'Montserrat', sans-serif;
+      font-family: $primary-font;
       color: $secondary-color;
       clear: both;
 
@@ -75,7 +78,7 @@ $section-color: #E6EBEB;
 
     /* Item duration */
     .item-duration {
-      font-family: 'Montserrat', sans-serif;
+      font-family: $primary-font;
 
       /* Align text (right) on the same line as secondary title */
       float: right;
