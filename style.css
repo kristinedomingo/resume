@@ -17,6 +17,9 @@ body {
   /* Firefox, other Gecko */
   box-sizing: border-box;
   /* Opera/IE 8+ */ }
+  @media print {
+    .resume-body {
+      box-shadow: none; } }
 
 /* Nameplate section (name and contact info) */
 .nameplate {
