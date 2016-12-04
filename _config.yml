@@ -1,0 +1,6 @@
+# Build settings
+sass:
+  style: compressed
+exclude:
+  - Gemfile
+  - Gemfile.lock
