@@ -1,4 +1,16 @@
 {
+  "pageLinks": [
+    {
+      "display": "PDF",
+      "link": "resume.pdf",
+      "iconName": "fa-file-pdf-o"
+    },
+    {
+      "display": "Source",
+      "link": "https://github.com/kristinedomingo/resume",
+      "iconName": "fa-file-code-o"
+    }
+  ],
   "nameplate": {
     "firstName": "Kristine",
     "lastName": "Domingo",
