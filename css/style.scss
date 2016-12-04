@@ -17,6 +17,10 @@ $bullet-font-size: 0.8em;
 
 body {
   padding: 20px;
+
+  a {
+    color: $primary-color;
+  }
 }
 
 .page-links {
@@ -24,7 +28,6 @@ body {
   text-align: center;
 
   a {
-    color: $primary-color;
     padding: 0px 15px; /* top-bottom, left-right */
   }
 
