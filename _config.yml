@@ -1,3 +1,7 @@
+# Site settings
+baseurl:
+  "/resume"
+
 # Build settings
 sass:
   style: compressed

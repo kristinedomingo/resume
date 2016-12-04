@@ -1,3 +1,6 @@
+---
+---
+
 <!DOCTYPE html><html>
 <head>
   <meta charset="UTF-8">
@@ -5,8 +8,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Muli" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
-  <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/style.css">
 
   <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
   <script src="https://use.fontawesome.com/7f582277e3.js"></script>
@@ -20,41 +23,41 @@
       <div class="nameplate">
 
         <div class="name">
-          <span class="first-name">{{nameplate.firstName}}</span>
-          <span class="last-name">{{nameplate.lastName}}</span>
+          <span class="first-name">{{ site.data.content.nameplate.firstName }}</span>
+          <span class="last-name">{{ site.data.content.nameplate.lastName }}</span>
         </div>
 
         <div class="icons">
-          {{#each nameplate.icons}}
+          {% for icon in site.data.content.nameplate.icons %}
             <a href={{this.link}}>
               <i class="fa {{this.icon}}" aria-hidden="true"></i>
-              {{this.display}}
+              {{ icon.display }}
             </a>
-          {{/each}}
+          {% endfor %}
         </div>
 
       </div>
 
-      {{#each sections}}
+      {% for section in site.data.content.sections %}
         <div class="resume-section">
           <div class="section-header">
-            {{this.header}}
+            {{ section.header }}
           </div>
-          {{#each this.items}}
+          {% for item in section.items %}
             <div class="section-item">
-              <span class="item-title">{{this.title}}</span>
-              <span class="item-location">{{this.location}}</span>
-              <span class="item-secondary-title">{{this.secondaryTitle}}</span>
-              <span class="item-duration">{{this.duration}}</span>
+              <span class="item-title">{{ item.title }}</span>
+              <span class="item-location">{{ item.location }}</span>
+              <span class="item-secondary-title">{{ item.secondaryTitle }}</span>
+              <span class="item-duration">{{ item.duration }}</span>
               <ul class="item-bullets">
-                {{#each this.bullets}}
-                  <li>{{this}}</li>
-                {{/each}}
+                {% for bullet in item.bullets %}
+                  <li>{{ bullet }}</li>
+                {% endfor %}
               </ul>
             </div>
-          {{/each}}
+          {% endfor %}
         </div>
-      {{/each}}
+      {% endfor %}
 
     </div>
 
