@@ -14,57 +14,51 @@
   <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
   <script src="https://use.fontawesome.com/7f582277e3.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.min.js"></script>
-
-  <script id="resume-template" type="text/x-handlebars-template">
-
-    <div class="resume-body">
-
-      <div class="nameplate">
-
-        <div class="name">
-          <span class="first-name">{{ site.data.content.nameplate.firstName }}</span>
-          <span class="last-name">{{ site.data.content.nameplate.lastName }}</span>
-        </div>
-
-        <div class="icons">
-          {% for icon in site.data.content.nameplate.icons %}
-            <a href={{this.link}}>
-              <i class="fa {{this.icon}}" aria-hidden="true"></i>
-              {{ icon.display }}
-            </a>
-          {% endfor %}
-        </div>
-
-      </div>
-
-      {% for section in site.data.content.sections %}
-        <div class="resume-section">
-          <div class="section-header">
-            {{ section.header }}
-          </div>
-          {% for item in section.items %}
-            <div class="section-item">
-              <span class="item-title">{{ item.title }}</span>
-              <span class="item-location">{{ item.location }}</span>
-              <span class="item-secondary-title">{{ item.secondaryTitle }}</span>
-              <span class="item-duration">{{ item.duration }}</span>
-              <ul class="item-bullets">
-                {% for bullet in item.bullets %}
-                  <li>{{ bullet }}</li>
-                {% endfor %}
-              </ul>
-            </div>
-          {% endfor %}
-        </div>
-      {% endfor %}
-
-    </div>
-
-  </script>
 </head>
 
 <body>
+  <div class="resume-body">
+
+    <div class="nameplate">
+
+      <div class="name">
+        <span class="first-name">{{ site.data.content.nameplate.firstName }}</span>
+        <span class="last-name">{{ site.data.content.nameplate.lastName }}</span>
+      </div>
+
+      <div class="icons">
+        {% for icon in site.data.content.nameplate.icons %}
+          <a href={{ icon.link }}>
+            <i class="fa {{ icon.iconName }}" aria-hidden="true"></i>
+            {{ icon.display }}
+          </a>
+        {% endfor %}
+      </div>
+
+    </div>
+
+    {% for section in site.data.content.sections %}
+      <div class="resume-section">
+        <div class="section-header">
+          {{ section.header }}
+        </div>
+        {% for item in section.items %}
+          <div class="section-item">
+            <span class="item-title">{{ item.title }}</span>
+            <span class="item-location">{{ item.location }}</span>
+            <span class="item-secondary-title">{{ item.secondaryTitle }}</span>
+            <span class="item-duration">{{ item.duration }}</span>
+            <ul class="item-bullets">
+              {% for bullet in item.bullets %}
+                <li>{{ bullet }}</li>
+              {% endfor %}
+            </ul>
+          </div>
+        {% endfor %}
+      </div>
+    {% endfor %}
+
+  </div>
 </body>
 
 </html>

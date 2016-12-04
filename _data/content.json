@@ -6,27 +6,27 @@
       {
         "display": "me@kristinedomingo.com",
         "link": "mailto:me@kristinedomingo.com",
-        "icon": "fa-envelope"
+        "iconName": "fa-envelope"
       },
       {
         "display": "(713) 417-4961",
         "link": "",
-        "icon": "fa-mobile"
+        "iconName": "fa-mobile"
       },
       {
         "display": "kristinedomingo.com",
         "link": "https://kristinedomingo.com",
-        "icon": "fa-globe"
+        "iconName": "fa-globe"
       },
       {
         "display": "kristinedomingo",
         "link": "https://www.linkedin.com/in/kristinedomingo",
-        "icon": "fa-linkedin"
+        "iconName": "fa-linkedin"
       },
       {
         "display": "kristinedomingo",
         "link": "https://github.com/kristinedomingo",
-        "icon": "fa-github"
+        "iconName": "fa-github"
       }
     ]
   },
