@@ -52,8 +52,7 @@
           "duration": "Spring 2017",
           "bullets": [
             "CS GPA: 3.47",
-            "Business Foundations Program",
-            "Freshman Research Initiative (Computational Intelligence in Game Design)"
+            "Business Foundations Program, Freshman Research Initiative (Computational Intelligence in Game Design)"
           ]
         }
       ]
@@ -117,13 +116,6 @@
     {
       "header": "Projects",
       "items": [
-        {
-          "title": "SWEet Music (sweetmusic.me)",
-          "bullets": [
-            "Working with a group, created an interactive web application that allows users to browse a vast amount of music­-related data",
-            "Written using Flask and AngularJS with a MySQL database"
-          ]
-        },
         {
           "title": "Interactive Evolution with Minecraft Textures",
           "bullets": [
