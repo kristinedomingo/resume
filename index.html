@@ -17,13 +17,17 @@
 <body>
   <div class="resume-body">
 
+    <!-- NAMEPLATE (name, contact info) -->
     <div class="nameplate">
 
+      <!-- Name -->
       <div class="name">
         <span class="first-name">{{ site.data.content.nameplate.firstName }}</span>
         <span class="last-name">{{ site.data.content.nameplate.lastName }}</span>
       </div>
+      <!-- /Name -->
 
+      <!-- Contact Info -->
       <div class="icons">
         {% for icon in site.data.content.nameplate.icons %}
           <a href={{ icon.link }}>
@@ -32,32 +36,51 @@
           </a>
         {% endfor %}
       </div>
+      <!-- /Contact Info -->
 
     </div>
+    <!-- /NAMEPLATE -->
 
+    <!-- SECTIONS -->
     {% for section in site.data.content.sections %}
       <div class="resume-section">
+
+        <!-- SectionHeader ("Employment", "Education", etc.) -->
         <div class="section-header">
           {{ section.header }}
         </div>
+        <!-- /SectionHeader -->
+
+        <!-- SectionItems -->
         {% for item in section.items %}
           <div class="section-item">
+
+            <!-- ItemInfo (title, location, subtitle, duration) -->
             <span class="item-title">{{ item.title }}</span>
             <span class="item-location">{{ item.location }}</span>
             <span class="item-secondary-title">{{ item.secondaryTitle }}</span>
             <span class="item-duration">{{ item.duration }}</span>
+            <!-- /ItemInfo -->
+
+            <!-- ItemBullets -->
             <ul class="item-bullets">
               {% for bullet in item.bullets %}
                 <li>{{ bullet }}</li>
               {% endfor %}
             </ul>
+            <!-- /ItemBullets -->
+
           </div>
         {% endfor %}
+        <!-- /SectionItems -->
+
       </div>
     {% endfor %}
+    <!-- SECTIONS -->
 
   </div>
 
+  <!-- PageLinks (PDF, GitHub source) -->
   <div class="page-links">
     {% for pageLink in site.data.content.pageLinks %}
       <a href={{ pageLink.link }}>
@@ -66,6 +89,8 @@
       </a>
     {% endfor %}
   </div>
+  <!-- /PageLinks -->
+
 </body>
 
 </html>
