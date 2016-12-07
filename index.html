@@ -9,9 +9,9 @@
 
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Muli" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/style.css">
 
-  <script src="https://use.fontawesome.com/7f582277e3.js"></script>
 </head>
 
 <body>
@@ -73,6 +73,25 @@
           </div>
         {% endfor %}
         <!-- /SectionItems -->
+
+        <!-- Skills -->
+        {% if section.skills %}
+        <ul class="skill-items">
+          {% for skill in section.skills %}
+            <li>
+              <span class="skill-category">{{ skill.category }}:</span>
+              {% for skillItem in skill.items %}
+                {% if forloop.last %}
+                  <span class="skill-item">{{ skillItem }}</span>
+                {% else %}
+                  <span class="skill-item">{{ skillItem }},</span>
+                {% endif %}
+              {% endfor %}
+            </li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+        <!-- /Skills -->
 
       </div>
     {% endfor %}

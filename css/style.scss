@@ -14,6 +14,7 @@ $name-font-size: 2.5em;
 $icon-font-size: 0.9em;
 $section-header-font-size: 1.5em;
 $bullet-font-size: 0.8em;
+$skill-font-size: 0.8em;
 
 body {
   padding: 20px;
@@ -48,7 +49,7 @@ body {
   height: 1100px;
 
   /* Prevent padding from changing size */
-  padding: 20px;
+  padding: 15px 20px; /* top-bottom, left-right */
   -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
   -moz-box-sizing: border-box;    /* Firefox, other Gecko */
   box-sizing: border-box;         /* Opera/IE 8+ */
@@ -99,7 +100,7 @@ body {
   clear: both;
 
   /* Ensure padding (text left-alignment) is consistent */
-  .section-header, .section-item {
+  .section-header, .section-item, .skill-items {
     padding: 1px 15px; /* top-bottom, left-right */
   }
 
@@ -114,6 +115,22 @@ body {
     font-weight: 900;
     color: $primary-color;
     text-transform: uppercase;
+  }
+
+  /* Skills */
+  .skill-items {
+    font-size: $skill-font-size;
+    list-style: none;
+
+    .skill-category {
+      font-family: $primary-font;
+      text-transform: uppercase;
+    }
+
+    .skill-items {
+      display: inline;
+      margin-bottom: 10px;
+    }
   }
 
   /* Section content */
@@ -153,6 +170,7 @@ body {
     /* Item bullets */
     .item-bullets {
       padding-left: 25px;
+      margin-bottom: 5px;
       font-size: $bullet-font-size;
 
       /* Prevent above floating text from messing up things */

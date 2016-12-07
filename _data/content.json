@@ -51,7 +51,6 @@
           "secondaryTitle": "Bachelors of Science and Arts in Computer Science",
           "duration": "Spring 2017",
           "bullets": [
-            "CS GPA: 3.47",
             "Business Foundations Program, Freshman Research Initiative (Computational Intelligence in Game Design)"
           ]
         }
@@ -97,8 +96,7 @@
           "duration": "Jun 2015 to Aug 2015",
           "bullets": [
             "Created a tool that allowed the company's product developers to quickly and easily access database information",
-            "Given complete responsibility of the project (with guidance), from planning and design to initial release",
-            "Wrote the UI in C# with Windows Forms, and the back-end in C++"
+            "Given complete responsibility of the project (with guidance), from planning and design to initial release"
           ]
         },
         {
@@ -116,6 +114,13 @@
     {
       "header": "Projects",
       "items": [
+        {
+          "title": "SWEet Music (sweetmusic.me)",
+          "bullets": [
+            "Working with a group, created an interactive web application that allows users to browse a vast amount of music­-related data",
+            "Written using Flask and AngularJS with a MySQL database"
+          ]
+        },
         {
           "title": "Interactive Evolution with Minecraft Textures",
           "bullets": [
@@ -144,6 +149,40 @@
           "bullets": [
             "For CS 314: Data Structures, by Lecturer Mike Scott",
             "Led weekly discussion sections, graded weekly projects written in Java, and assisted students in learning fundamental data structures"
+          ]
+        }
+      ]
+    },
+    {
+      "header": "Skills",
+      "skills": [
+        {
+          "category": "Languages",
+          "items": [
+            "Python",
+            "C++",
+            "Java",
+            "SQL"
+          ]
+        },
+        {
+          "category": "Web Development",
+          "items": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+          ]
+        },
+        {
+          "category": "Tools/Frameworks",
+          "items": [
+            "React",
+            "AngularJS",
+            "Sass",
+            "Webpack",
+            "Grunt",
+            "Mocha",
+            "Karma"
           ]
         }
       ]
