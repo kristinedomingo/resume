@@ -27,12 +27,17 @@ body {
 .page-links {
   font-family: $primary-font;
   text-align: center;
+  margin: 50px;
+
+  /* Hide page links for printing resume */
+  @media print {
+    display: none;
+  }
 
   a {
     padding: 0px 15px; /* top-bottom, left-right */
   }
 
-  margin: 50px;
 }
 
 .resume-body {
