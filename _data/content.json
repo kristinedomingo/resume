@@ -75,9 +75,9 @@
           "secondaryTitle": "Software Engineering Intern",
           "duration": "June 2016 to Aug 2016",
           "bullets": [
-            "Created the front-page of RetailMeNot Gift Cards (<a href=\"https://retailmenot.com/giftcards\">retailmenot.com/giftcards</a>) with two other interns ",
-            "Performed full-stack work, using Redux with FlightJS (by Twitter), Node, and Spring for the Java API",
-            "Coordinated the project from the ground up with product managers, UX designers, and other software engineers"
+            "Designed and developed the front-page of RetailMeNot Gift Cards (<a href=\"https://retailmenot.com/giftcards\">retailmenot.com/giftcards</a>) as part of a three-intern team ",
+            "Built the project from the ground up using Node.js, Express, FlightJS, Redux, Webpack, and Spring",
+            "Coordinated the project extensively with product managers and UX designers, adding placements for promotional merchant advertisements"
           ]
         },
         {
