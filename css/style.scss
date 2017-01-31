@@ -176,6 +176,7 @@ body {
     .item-bullets {
       padding-left: 25px;
       margin-bottom: 5px;
+      line-height: 1.5em;
       font-size: $bullet-font-size;
 
       /* Prevent above floating text from messing up things */
