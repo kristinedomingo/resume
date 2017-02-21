@@ -45,7 +45,7 @@ body {
 .resume-body {
   font-family: $secondary-font;
   background-color: #fff;
-  box-shadow: 20px 20px 75px rgba(85, 85, 85, 0.75);
+  box-shadow: 0px 20px 75px 0px rgba(85, 85, 85, 0.85);
 
   @media print {
     box-shadow: none;
