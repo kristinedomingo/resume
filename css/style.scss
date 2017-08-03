@@ -33,6 +33,11 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
 
+  @media print {
+    background: none;
+    padding: 0px;
+  }
+
   a {
     color: $primary-color;
   }
