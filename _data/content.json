@@ -75,7 +75,7 @@
           "secondaryTitle": "Software Engineering Intern",
           "duration": "June 2016 to Aug 2016",
           "bullets": [
-            "Designed and developed the front-page of RetailMeNot Gift Cards (<a href=\"https://retailmenot.com/giftcards\">retailmenot.com/giftcards</a>) as part of a three-intern team ",
+            "Designed and developed the home page of RetailMeNot Gift Cards (<a href=\"https://retailmenot.com/giftcards\">retailmenot.com/giftcards</a>) as part of a three-intern team ",
             "Built the project from the ground up using Node.js, Express, FlightJS, Redux, Webpack, and Spring",
             "Coordinated the project extensively with product managers and UX designers, adding placements for promotional merchant advertisements"
           ]
@@ -97,7 +97,8 @@
           "duration": "Jun 2015 to Aug 2015",
           "bullets": [
             "Created a tool that allowed the company's product developers to quickly and easily access database information",
-            "Given complete responsibility of the project (with guidance), from planning and design to initial release"
+            "Given complete responsibility of the project (with guidance), from planning and design to initial release",
+            "Wrote the UI in C# using Windows Forms with a C++ back-end"
           ]
         },
         {

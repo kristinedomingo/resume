@@ -18,13 +18,20 @@ $section-header-font-size: 1.5em;
 $bullet-font-size: 0.8em;
 $skill-font-size: 0.8em;
 
+html {
+  height: 100%;
+}
+
 body {
+  height: 100%;
   padding: 75px;
   background: $background-color; /* For browsers that do not support gradients */
   background: -webkit-linear-gradient($background-color, $background-color-2); /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient($background-color, $background-color-2); /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient($background-color, $background-color-2); /* For Firefox 3.6 to 15 */
   background: linear-gradient($background-color, $background-color-2); /* Standard syntax */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 
   a {
     color: $primary-color;
